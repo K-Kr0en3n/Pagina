@@ -1,0 +1,75 @@
+body{
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: blue;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    line-height: 100px;
+}
+
+.menu {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  flex: 1;
+}
+
+.imagen {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imagenprofe {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+article{
+    text-align: justify;
+    margin: 2px;
+}
+
+.contenedor{
+    background: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.pacman{
+    background: red;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px
+}
+
+footer{
+    text-align: center;
+}
+
+.contactos{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px
+}
+
+.contactos a {
+  color: black;
+  font-weight: 20px;
+  flex: 1;
+}
