@@ -5,29 +5,46 @@
 }
 
 body{
-  background: rgb(208 227 255);
+  background: white;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
 header{
-  background: rgb(51, 78, 172);
-  height: 140px;
+  background: rgb(8, 31, 92);
   width: 100%;
-  text-align: left;
-  line-height: 100px;
-  padding: 20px;
+  padding: 0 40px;
   color: white;
-  line-height: 1.5;
-  font-size: x-large;
   z-index: 1000;
   top: 0;
   position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.5cm;
 }
 header a{
   color: white;
-  font-size: large;
 }
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header nav a {  
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 2px;
+  font-size: 0.4cm;
+}
+
 
 .titulo{
   background: rgb(8, 31, 92);
@@ -37,8 +54,14 @@ header a{
   height: 350px;
   width: 100%;
   font-family: serif;
+  pointer-events: none;
+  font-size: 0.5cm;
 }
-
+.titulo .seccion{
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
 .titulo2{
   background: rgb(8, 31, 92);
   text-align: center;
@@ -59,7 +82,7 @@ header a{
   margin: 20px auto;
 }
 .tituloenlace a{
-  color: black;
+  color: rgb(8, 31, 92);;
   font-style: normal;
   text-decoration: none;
   font-weight: bold;
@@ -101,10 +124,11 @@ header a{
 }
 
 .carta{
-  background: rgb(247, 242, 235);
+  background: white;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-sizing: border-box black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .carta img{
   width: 100%;
@@ -114,9 +138,21 @@ header a{
 
 .tituloglobo{
   display: grid;
-  background: rgb(112, 150, 209);
+  background: rgb(8, 31, 92);
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50px;
+  padding: 6px 20px;
+  margin-bottom: 25px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+}
+.tituloglobo h2{
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 0.6cm;
+  letter-spacing: 0.02cm;
+  text-align: left;
+  margin: 0;
 }
 .gridasesores{
   display: grid;
@@ -127,10 +163,10 @@ header a{
   grid-template-columns: 150px 1fr;
   gap: 20px;
   align-items: center;
-  background: rgb(247, 242, 235);
+  background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .asesor img{
   width: 150px;
@@ -150,14 +186,20 @@ header a{
   padding: 4px 24px 12px;
 }
 .flecha a{
-  background: rgb(247, 242, 235);
+  background: white;
   color: black;
   padding: 10px 15px;
   border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+}
+.flecha a:hover{
+  color: white;
+  background: rgb(8, 31, 92);
+  transform: translateY(2px);
 }
 
 footer{
-  background: rgb(51, 78, 172);
+  background: rgb(8, 31, 92);
   color: white;
   text-align: center;
   padding: 20px;
@@ -175,6 +217,12 @@ footer a{
   font-style: normal;
   text-decoration: none;
 }
+hr{
+  border: 0px;
+  border-top: 2px solid rgb(8, 31, 92);
+  margin: 20px auto;
+  padding: -20px;
+}
 
 @media (max-width: 600px) {
     .asesor {
@@ -184,5 +232,30 @@ footer a{
 
     .asesor img {
         margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        gap: 10px;
+    }
+
+    header nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .titulo,
+    .titulo2 {
+        padding: 60px 20px;
+    }
+
+    .seccion {
+        padding: 40px 16px;
     }
 }
