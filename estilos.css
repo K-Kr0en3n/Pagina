@@ -33,7 +33,7 @@ header nav {
   align-items: center;
   gap: 32px;
 }
-header nav a {  
+header nav a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
@@ -44,6 +44,15 @@ header nav a {
   padding-bottom: 2px;
   font-size: 0.4cm;
 }
+header img{
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  padding: 0px;
+  border:0px;
+  padding: 10px 20px;
+}
+
 
 
 .titulo{
@@ -56,6 +65,8 @@ header nav a {
   font-family: serif;
   pointer-events: none;
   font-size: 0.5cm;
+  position: relative;
+  overflow: hidden;
 }
 .titulo .seccion{
   padding: 0;
@@ -69,6 +80,54 @@ header nav a {
   height: 240px;
   width: 100%;
   font-family: serif;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  overflow: hidden;
+}
+.titulo2::before{
+  content: '';           
+  position: absolute;  
+  top: -60px;
+  right: -60px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;  
+  border: 1.5px solid rgba(112, 150, 209, 0.18);  
+  pointer-events: none; 
+}
+.titulo2::after{
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 1px solid rgba(112, 150, 209, 0.12);
+  pointer-events: none;
+}
+
+.titulo::before {
+  content: '';           
+  position: absolute;  
+  top: -60px;
+  right: -60px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;  
+  border: 1.5px solid rgba(112, 150, 209, 0.18);  
+  pointer-events: none; 
+}
+.titulo::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 1px solid rgba(112, 150, 209, 0.12);
+  pointer-events: none;
 }
 
 .tituloenlace{
@@ -116,6 +175,14 @@ header nav a {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap:20px;
 }
+.grindgral p{
+  text-align: justify;
+  grid-area: auto;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .gridarticulos{
   display: grid;
@@ -129,11 +196,31 @@ header nav a {
   padding: 15px;
   box-sizing: border-box black;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: black;
+  font-style: italic;
 }
 .carta img{
   width: 100%;
   height: 280px;
   object-fit: cover;
+}
+.carta p{
+  text-align: justify;
+  grid-area: auto;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+.carta h3{
+  text-align: center;
+  grid-area: auto;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 100%;
+  font-family: 'georgia';
+  font-style: normal;
 }
 
 .tituloglobo{
@@ -196,6 +283,33 @@ header nav a {
   color: white;
   background: rgb(8, 31, 92);
   transform: translateY(2px);
+}
+
+.tituloauspiciadores{
+  background: rgb(8, 31, 92);
+  color: white;
+  font: bold;
+  font-size: 0.5rem;
+  text-align: center;
+  gap: 20px;
+  top: 20px;
+}
+.auspiciadores{
+  display: flex;
+  position: center;
+  text-align: center;
+  justify-content: center;
+  background: rgb(8, 31, 92);
+  padding: 12px 20px;
+}
+.auspiciadores img{
+  display: inline-block;
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100px;
+  bottom: 50px;
+  margin: 20px;
 }
 
 footer{
