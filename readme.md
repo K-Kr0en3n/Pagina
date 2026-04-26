@@ -1,4 +1,4 @@
 Mejora en el  CSS,
-Uso de botones y iconos,
-Definición de paleta cromática:
-Adicion de pequeñas animaciones en los botones
+Mejora del background,
+adicion de logos,
+mejora de los textos
