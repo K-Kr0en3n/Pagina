@@ -1,4 +1,7 @@
 Mejora en el  CSS,
 Mejora del background,
-adicion de logos,
-mejora de los textos
+mejora de los textos,
+mejora de las animaciones,
+animaciones al cargar la pagina,
+implementacion de mas redirecciones
+
