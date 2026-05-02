@@ -225,6 +225,11 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 
+.seccion2 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+}
 /* --grids-- */
 .grindgral {
   display: grid;
@@ -285,15 +290,15 @@ header nav a:hover {
 
 /* --tituloglobo-- */
 .tituloglobo {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin: 0 auto;         
   background: rgb(8, 31, 92);
   border-radius: 50px;
   padding: 6px 20px;
-  margin-bottom: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
 .tituloglobo h2 {
   font-family: 'Times New Roman', serif;
   font-size: 0.6cm;
@@ -301,9 +306,8 @@ header nav a:hover {
   letter-spacing: 0.02cm;
   color: white;
   margin: 0;
-  white-space: nowrap;
+  text-align: center;
 }
-
 /* --asesores-- */
 .gridasesores { display: grid; gap: 20px; }
 
@@ -448,4 +452,30 @@ hr {
   }
 
   .asesor img { margin: auto; }
+}
+
+/* --slider-- */
+.slider{
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,.35);
+}
+
+.track{
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.slide{
+  min-width: 33.333%;
+  padding: 10px;
+}
+
+.slide img{
+  width: 100%;
+  aspect-ratio: 210 / 297; 
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
