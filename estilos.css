@@ -243,7 +243,11 @@ header nav a:hover {
   text-align: justify;
   color: black;
 }
-
+.grindgral img{
+  height: 20px;
+  width: 100%;
+  object-fit: flex;
+}
 .gridarticulos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
@@ -288,6 +292,32 @@ header nav a:hover {
   box-shadow: 0 12px 24px rgba(8, 31, 92, 0.22);
 }
 
+.cartagral {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cartagral img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.cartagral p{
+  font-family: 'Times New Roman', Times, serif;
+}
+.cartagral h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0b2e59;
+  line-height: 1.2;
+}
 /* --tituloglobo-- */
 .tituloglobo {
   display: flex;
